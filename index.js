@@ -2,7 +2,7 @@
 var each = require("./each.js")
 var map = require("./map.js")
 var reduce = require("./reduce.js")
-
+var reduceRight = require("./reduceRight.js")
 // Arrays
 
 
@@ -21,7 +21,7 @@ var isFunction = require("./isFunction.js")
 
 module.exports = {
     // ## Collections
-    // - each
+    // each
     each: each,
     forEach: each,
 
@@ -33,6 +33,10 @@ module.exports = {
     reduce: reduce,
     foldl: reduce,
     inject: reduce,
+
+    // reduce right
+    reduceRight: reduceRight,
+    foldr: reduceRight,
 
     // ## Arrays
 
