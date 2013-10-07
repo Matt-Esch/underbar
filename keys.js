@@ -16,5 +16,5 @@ function keys(obj) {
         }
     }
 
-    return objectKeys;
+    return objectKeys
 }

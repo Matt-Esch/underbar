@@ -17,13 +17,13 @@ function bind(func, context) {
         throw new TypeError()
     }
 
-    args = slice.call(arguments, 2);
+    args = slice.call(arguments, 2)
     bound = function() {
         if (!(this instanceof bound)) {
             return func.apply(context, args.concat(slice.call(arguments)))
         }
 
-        ctor.prototype = func.prototype;
+        ctor.prototype = func.prototype
         var self = new ctor()
         ctor.prototype = null
 

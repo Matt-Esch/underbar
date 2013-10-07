@@ -34,5 +34,5 @@ function reduce(obj, iterator, memo, context) {
         throw new TypeError(reduceError)
     }
 
-    return memo;
+    return memo
 }

@@ -18,5 +18,5 @@ function map(obj, iterator, context) {
         results.push(iterator.call(context, value, index, list))
     })
 
-    return results;
+    return results
 }
