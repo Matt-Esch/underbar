@@ -7,7 +7,7 @@ module.exports = each
 function each(obj, iterator, context) {
     var i, length
 
-    if (typeof obj !== "object") {
+    if (obj == null) {
         return
     }
 
