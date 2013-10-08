@@ -3,6 +3,8 @@ var each = require("./each.js")
 var map = require("./map.js")
 var reduce = require("./reduce.js")
 var reduceRight = require("./reduceRight.js")
+var find = require("./find.js")
+var some = require("./some.js")
 // Arrays
 
 
@@ -37,6 +39,14 @@ module.exports = {
     // reduce right
     reduceRight: reduceRight,
     foldr: reduceRight,
+
+    // find
+    find: find,
+    detect: find,
+
+    // some
+    some: some,
+    any: some,
 
     // ## Arrays
 
