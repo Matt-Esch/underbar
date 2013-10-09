@@ -4,6 +4,7 @@ var map = require("./map.js")
 var reduce = require("./reduce.js")
 var reduceRight = require("./reduceRight.js")
 var find = require("./find.js")
+var filter = require("./filter.js")
 var some = require("./some.js")
 // Arrays
 
@@ -43,6 +44,10 @@ module.exports = {
     // find
     find: find,
     detect: find,
+
+    // filter
+    filter: filter,
+    select: filter,
 
     // some
     some: some,
