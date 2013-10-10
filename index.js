@@ -2,9 +2,10 @@
 var each = require("./each.js")
 var map = require("./map.js")
 var reduce = require("./reduce.js")
-var reduceRight = require("./reduceRight.js")
+var reduceRight = require("./reduce-right.js")
 var find = require("./find.js")
 var filter = require("./filter.js")
+var where = require("./where.js")
 var some = require("./some.js")
 // Arrays
 
@@ -14,7 +15,13 @@ var bind = require("./bind.js")
 
 // Objects
 var keys = require("./keys.js")
-var isFunction = require("./isFunction.js")
+var has = require("./has.js")
+var isEmpty = require("./is-empty.js")
+var isArray = require("./is-array.js")
+var isFunction = require("./is-function.js")
+var isString = require("./is-string.js")
+
+
 
 
 // Utility
@@ -49,6 +56,9 @@ module.exports = {
     filter: filter,
     select: filter,
 
+    // where
+    where: where,
+
     // some
     some: some,
     any: some,
@@ -60,7 +70,11 @@ module.exports = {
 
     // ## Objects
     keys: keys,
-    isFunction: isFunction
+    has: has,
+    isEmpty: isEmpty,
+    isArray: isArray,
+    isFunction: isFunction,
+    isString: isString
 
     // ## Utility
 
