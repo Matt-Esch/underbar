@@ -7,6 +7,7 @@ var find = require("./find.js")
 var filter = require("./filter.js")
 var where = require("./where.js")
 var findWhere = require("./find-where.js")
+var reject = require("./reject.js")
 var some = require("./some.js")
 // Arrays
 
@@ -62,6 +63,9 @@ module.exports = {
 
     // find where
     findWhere: findWhere,
+
+    // reject
+    reject: reject,
 
     // some
     some: some,
