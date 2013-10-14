@@ -8,6 +8,7 @@ var filter = require("./filter.js")
 var where = require("./where.js")
 var findWhere = require("./find-where.js")
 var reject = require("./reject.js")
+var every = require("./every.js")
 var some = require("./some.js")
 // Arrays
 
@@ -66,6 +67,10 @@ module.exports = {
 
     // reject
     reject: reject,
+
+    // every
+    every: every,
+    all: every,
 
     // some
     some: some,
