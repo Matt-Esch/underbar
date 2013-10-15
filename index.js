@@ -10,6 +10,7 @@ var findWhere = require("./find-where.js")
 var reject = require("./reject.js")
 var every = require("./every.js")
 var some = require("./some.js")
+var contains = require("./contains.js")
 // Arrays
 
 
@@ -23,9 +24,6 @@ var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
 var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
-
-
-
 
 // Utility
 
@@ -75,6 +73,12 @@ module.exports = {
     // some
     some: some,
     any: some,
+
+    // contains
+    contains: contains,
+    include: contains,
+
+
 
     // ## Arrays
 
