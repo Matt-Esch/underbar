@@ -11,6 +11,7 @@ var reject = require("./reject.js")
 var every = require("./every.js")
 var some = require("./some.js")
 var contains = require("./contains.js")
+var invoke = require("./invoke.js")
 // Arrays
 
 
@@ -77,6 +78,9 @@ module.exports = {
     // contains
     contains: contains,
     include: contains,
+
+    // invoke
+    invoke: invoke,
 
 
 
