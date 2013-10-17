@@ -12,6 +12,7 @@ var every = require("./every.js")
 var some = require("./some.js")
 var contains = require("./contains.js")
 var invoke = require("./invoke.js")
+var pluck = require("./pluck.js")
 // Arrays
 
 
@@ -81,6 +82,9 @@ module.exports = {
 
     // invoke
     invoke: invoke,
+
+    // pluck
+    pluck: pluck,
 
 
 
