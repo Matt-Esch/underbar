@@ -13,6 +13,8 @@ var some = require("./some.js")
 var contains = require("./contains.js")
 var invoke = require("./invoke.js")
 var pluck = require("./pluck.js")
+var max = require("./max.js")
+var min = require("./min.js")
 // Arrays
 
 
@@ -85,6 +87,12 @@ module.exports = {
 
     // pluck
     pluck: pluck,
+
+    // max
+    max: max,
+
+    // min
+    min: min,
 
 
 
