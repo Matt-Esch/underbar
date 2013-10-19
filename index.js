@@ -15,6 +15,7 @@ var invoke = require("./invoke.js")
 var pluck = require("./pluck.js")
 var max = require("./max.js")
 var min = require("./min.js")
+var sortBy = require("./sort-by.js")
 // Arrays
 
 
@@ -93,6 +94,9 @@ module.exports = {
 
     // min
     min: min,
+
+    // sort by
+    sortBy: sortBy,
 
 
 
