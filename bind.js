@@ -7,7 +7,7 @@ var slice = Array.prototype.slice
 module.exports = bind
 
 function bind(func, context) {
-    var args, bound;
+    var args, bound
 
     if (nativeBind && func.bind === nativeBind) {
         return nativeBind.apply(func, slice.call(arguments, 1))

@@ -16,6 +16,7 @@ var pluck = require("./pluck.js")
 var max = require("./max.js")
 var min = require("./min.js")
 var sortBy = require("./sort-by.js")
+var groupBy = require("./group-by.js")
 // Arrays
 
 
@@ -97,6 +98,9 @@ module.exports = {
 
     // sort by
     sortBy: sortBy,
+
+    // group by
+    groupBy: groupBy,
 
 
 
