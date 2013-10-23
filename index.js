@@ -17,6 +17,7 @@ var max = require("./max.js")
 var min = require("./min.js")
 var sortBy = require("./sort-by.js")
 var groupBy = require("./group-by.js")
+var indexBy = require("./index-by.js")
 // Arrays
 
 
