@@ -18,6 +18,7 @@ var min = require("./min.js")
 var sortBy = require("./sort-by.js")
 var groupBy = require("./group-by.js")
 var indexBy = require("./index-by.js")
+var countBy = require("./count-by.js")
 // Arrays
 
 
@@ -103,6 +104,11 @@ module.exports = {
     // group by
     groupBy: groupBy,
 
+    // index by
+    indexBy: indexBy,
+
+    // count by
+    countBy: countBy,
 
 
     // ## Arrays
