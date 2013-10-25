@@ -19,6 +19,7 @@ var sortBy = require("./sort-by.js")
 var groupBy = require("./group-by.js")
 var indexBy = require("./index-by.js")
 var countBy = require("./count-by.js")
+var shuffle = require("./shuffle.js")
 // Arrays
 
 
@@ -34,7 +35,8 @@ var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
 
 // Utility
-
+var identity = require("./identity.js")
+var random = require("./random.js")
 
 // Chaining
 
@@ -110,6 +112,9 @@ module.exports = {
     // count by
     countBy: countBy,
 
+    // shuffle
+    shuffle: shuffle,
+
 
     // ## Arrays
 
@@ -122,9 +127,11 @@ module.exports = {
     isEmpty: isEmpty,
     isArray: isArray,
     isFunction: isFunction,
-    isString: isString
+    isString: isString,
 
     // ## Utility
+    identity: identity,
+    random: random
 
     // ## Chaining
 }
