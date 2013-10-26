@@ -20,6 +20,7 @@ var groupBy = require("./group-by.js")
 var indexBy = require("./index-by.js")
 var countBy = require("./count-by.js")
 var shuffle = require("./shuffle.js")
+var sample = require("./sample.js")
 // Arrays
 
 
@@ -28,6 +29,7 @@ var bind = require("./bind.js")
 
 // Objects
 var keys = require("./keys.js")
+var values = require("./values.js")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -115,6 +117,9 @@ module.exports = {
     // shuffle
     shuffle: shuffle,
 
+    // sample
+    sample: sample,
+
 
     // ## Arrays
 
@@ -123,6 +128,7 @@ module.exports = {
 
     // ## Objects
     keys: keys,
+    values: values,
     has: has,
     isEmpty: isEmpty,
     isArray: isArray,
