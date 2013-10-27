@@ -21,6 +21,7 @@ var indexBy = require("./index-by.js")
 var countBy = require("./count-by.js")
 var shuffle = require("./shuffle.js")
 var sample = require("./sample.js")
+var toArray = require("./to-array.js")
 // Arrays
 
 
@@ -119,6 +120,9 @@ module.exports = {
 
     // sample
     sample: sample,
+
+    // to array
+    toArray: toArray,
 
 
     // ## Arrays
