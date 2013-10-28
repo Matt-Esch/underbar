@@ -22,6 +22,7 @@ var countBy = require("./count-by.js")
 var shuffle = require("./shuffle.js")
 var sample = require("./sample.js")
 var toArray = require("./to-array.js")
+var size = require("./size.js")
 // Arrays
 
 
@@ -123,6 +124,9 @@ module.exports = {
 
     // to array
     toArray: toArray,
+
+    // size
+    size: size,
 
 
     // ## Arrays
