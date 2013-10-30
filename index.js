@@ -23,8 +23,9 @@ var shuffle = require("./shuffle.js")
 var sample = require("./sample.js")
 var toArray = require("./to-array.js")
 var size = require("./size.js")
-// Arrays
 
+// Arrays
+var first = require("./first.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -130,6 +131,11 @@ module.exports = {
 
 
     // ## Arrays
+
+    // first
+    first: first,
+    head: first,
+    take: first,
 
     // ## Functions
     bind: bind,
