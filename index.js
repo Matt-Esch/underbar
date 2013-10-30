@@ -137,6 +137,8 @@ module.exports = {
     head: first,
     take: first,
 
+    initial: initial,
+
     // ## Functions
     bind: bind,
 
