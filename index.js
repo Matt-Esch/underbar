@@ -26,6 +26,9 @@ var size = require("./size.js")
 
 // Arrays
 var first = require("./first.js")
+var initial = require("./initial.js")
+var last = require("./last.js")
+var rest = require("./rest.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -47,86 +50,39 @@ var random = require("./random.js")
 
 module.exports = {
     // ## Collections
-    // each
     each: each,
     forEach: each,
-
-    // map
     map: map,
     collect: map,
-
-    // reduce
     reduce: reduce,
     foldl: reduce,
     inject: reduce,
-
-    // reduce right
     reduceRight: reduceRight,
     foldr: reduceRight,
-
-    // find
     find: find,
     detect: find,
-
-    // filter
     filter: filter,
     select: filter,
-
-    // where
     where: where,
-
-    // find where
     findWhere: findWhere,
-
-    // reject
     reject: reject,
-
-    // every
     every: every,
     all: every,
-
-    // some
     some: some,
     any: some,
-
-    // contains
     contains: contains,
     include: contains,
-
-    // invoke
     invoke: invoke,
-
-    // pluck
     pluck: pluck,
-
-    // max
     max: max,
-
-    // min
     min: min,
-
-    // sort by
     sortBy: sortBy,
-
-    // group by
     groupBy: groupBy,
-
-    // index by
     indexBy: indexBy,
-
-    // count by
     countBy: countBy,
-
-    // shuffle
     shuffle: shuffle,
-
-    // sample
     sample: sample,
-
-    // to array
     toArray: toArray,
-
-    // size
     size: size,
 
 
@@ -137,7 +93,16 @@ module.exports = {
     head: first,
     take: first,
 
+    // initial
     initial: initial,
+
+    // last
+    last: last,
+
+    // rest
+    rest: rest,
+    tail: rest,
+    drop: rest,
 
     // ## Functions
     bind: bind,

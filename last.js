@@ -12,5 +12,4 @@ function last(array, n, guard) {
     } else {
         return slice.call(array, Math.max(array.length - n, 0))
     }
-
 }
