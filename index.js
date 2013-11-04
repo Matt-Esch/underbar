@@ -29,6 +29,7 @@ var first = require("./first.js")
 var initial = require("./initial.js")
 var last = require("./last.js")
 var rest = require("./rest.js")
+var compact = require("./compact.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -103,6 +104,9 @@ module.exports = {
     rest: rest,
     tail: rest,
     drop: rest,
+
+    // compact
+    compact: compact,
 
     // ## Functions
     bind: bind,
