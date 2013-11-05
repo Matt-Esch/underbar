@@ -30,6 +30,7 @@ var initial = require("./initial.js")
 var last = require("./last.js")
 var rest = require("./rest.js")
 var compact = require("./compact.js")
+var flatten = require("./flatten.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -107,6 +108,9 @@ module.exports = {
 
     // compact
     compact: compact,
+
+    // flatten
+    flatten: flatten,
 
     // ## Functions
     bind: bind,
