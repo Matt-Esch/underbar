@@ -31,6 +31,8 @@ var last = require("./last.js")
 var rest = require("./rest.js")
 var compact = require("./compact.js")
 var flatten = require("./flatten.js")
+var without = require("./without.js")
+var difference = require("./difference.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -111,6 +113,12 @@ module.exports = {
 
     // flatten
     flatten: flatten,
+
+    // without
+    without: without,
+
+    // difference
+    difference: difference,
 
     // ## Functions
     bind: bind,
