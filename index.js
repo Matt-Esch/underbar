@@ -38,6 +38,8 @@ var intersection = require("./intersection.js")
 var uniq = require("./uniq.js")
 var zip = require("./zip.js")
 var object = require("./object.js")
+var indexOf = require("./index-of.js")
+var sortedIndex = require("./sorted-index.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -140,6 +142,12 @@ module.exports = {
 
     // object
     object: object,
+
+    // indexOf
+    indexOf: indexOf,
+
+    // sorted index
+    sortedIndex: sortedIndex,
 
     // ## Functions
     bind: bind,
