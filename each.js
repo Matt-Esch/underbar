@@ -27,4 +27,6 @@ function each(obj, iterator, context) {
             }
         }
     }
+
+    return obj
 }
