@@ -37,6 +37,7 @@ var union = require("./union.js")
 var intersection = require("./intersection.js")
 var uniq = require("./uniq.js")
 var zip = require("./zip.js")
+var object = require("./object.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -136,6 +137,9 @@ module.exports = {
 
     // zip
     zip: zip,
+
+    // object
+    object: object,
 
     // ## Functions
     bind: bind,
