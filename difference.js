@@ -1,14 +1,13 @@
 var contains = require("./contains.js")
 var filter = require("./filter.js")
+var flatten = require("./flatten.js")
 
-var ArrayProto = Array.prototype
-var concat = ArrayProto.concat
-var slice = ArrayProto.slice
+var slice = Array.prototype.slice
 
 module.exports = difference
 
 function difference(array) {
-    var rest = concat.apply(ArrayProto, slice.call(arguments, 1))
+    var rest = flatten(slice.call(arguments, 1), true, true, [])
     return filter(array, function (value) {
         return !contains(rest, value)
     })
