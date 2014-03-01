@@ -81,6 +81,7 @@ var isObject = require("./is-object.js")
 var isArguments = require("./is-arguments.js")
 var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
+var isNumber = require("./is-number.js")
 var finite = require("./is-finite.js")
 
 // Utility
@@ -190,6 +191,7 @@ module.exports = {
     isArguments: isArguments,
     isFunction: isFunction,
     isString: isString,
+    isNumber: isNumber,
     isFinite: finite,
 
     // ## Utility
