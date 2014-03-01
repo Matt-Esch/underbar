@@ -1,20 +1,26 @@
-var has = Object.prototype.hasOwnProperty
+var has = require("./has.js")
+var isObject = require("./isObject.js")
+
 var nativeKeys = Object.keys
 
 module.exports = nativeKeys || keys
 
 function keys(obj) {
-    if (obj !== Object(obj)) {
-        throw new TypeError("Invalid object")
+    if (!isObject(obj)) {
+        return []
     }
 
-    var objectKeys = []
+    if (nativeKeys) {
+        return nativeKeys(obj)
+    }
+
+    var k = []
 
     for (var key in obj) {
-        if (has.call(obj, key)) {
-            objectKeys.push(key)
+        if (has(obj, key)) {
+            k.push(key)
         }
     }
 
-    return objectKeys
+    return k
 }
