@@ -7,9 +7,5 @@ function size(obj) {
         return 0
     }
 
-    if (obj.length === +obj.length) {
-        return obj.length
-    } else {
-        return keys(obj).length
-    }
+    return (obj.length === +obj.length) ? obj.length : keys(obj).length
 }
