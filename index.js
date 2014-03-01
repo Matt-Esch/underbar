@@ -53,6 +53,7 @@ var defer = require("./defer.js")
 var throttle = require("./throttle.js")
 var debounce = require("./debounce.js")
 var once = require("./once.js")
+var after = require("./after.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -141,6 +142,8 @@ module.exports = {
     defer: defer,
     throttle: throttle,
     debounce: debounce,
+    once: once,
+    after: after,
 
     // ## Objects
     keys: keys,
