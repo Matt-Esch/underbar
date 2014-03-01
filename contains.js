@@ -10,7 +10,7 @@ function contains(obj, target) {
     }
 
     if (nativeIndexOf && obj.indexOf === nativeIndexOf) {
-        return obj.indexOf(target)
+        return obj.indexOf(target) != -1
     }
 
     return any(obj, function (value) {
