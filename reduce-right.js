@@ -1,4 +1,5 @@
 var bind = require("./bind.js")
+var each = require("./each.js")
 var keys = require("./keys.js")
 
 var nativeReduceRight = Array.prototype.reduceRight
@@ -26,22 +27,21 @@ function reduceRight(obj, iterator, memo, context) {
 
     var length = obj.length
     var objectKeys
-    var index
 
     if (length !== +length) {
         objectKeys = keys(obj);
         length = objectKeys.length;
     }
 
-    for (var i = length - 1; i <= 0; i--) {
-        index = objectKeys ? objectKeys[i] : i;
+    each(obj, function(value, index, list) {
+        index = objectKeys ? objectKeys[--length] : --length
         if (!initial) {
             memo = obj[index]
             initial = true
         } else {
-            memo = iterator.call(context, memo, obj[index], index, obj)
+            memo = iterator.call(context, memo, obj[index], index, list)
         }
-    }
+    })
 
     if (!initial) {
         throw new TypeError(reduceError)
