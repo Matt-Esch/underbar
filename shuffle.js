@@ -10,7 +10,7 @@ function shuffle(obj) {
 
     each(obj, function(value) {
         rand = random(index++)
-        shuffled[index - 1] = shuffled[rand];
+        shuffled[index - 1] = shuffled[rand]
         shuffled[rand] = value
     })
 
