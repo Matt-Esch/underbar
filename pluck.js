@@ -1,9 +1,8 @@
 var map = require("./map.js")
+var property = require("./property.js")
 
 module.exports = pluck
 
 function pluck(obj, key) {
-    return map(obj, function (value) {
-        return value[key]
-    })
+    return map(obj, property(key))
 }
