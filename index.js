@@ -54,6 +54,7 @@ var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
 var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
+var finite = require("./is-finite.js")
 
 // Utility
 var identity = require("./identity.js")
@@ -135,6 +136,7 @@ module.exports = {
     isArray: isArray,
     isFunction: isFunction,
     isString: isString,
+    isFinite: finite,
 
     // ## Utility
     identity: identity,
