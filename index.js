@@ -93,8 +93,9 @@ var isUndefined = require("./is-undefined.js")
 // Utility
 var identity = require("./identity.js")
 var constant = require("./constant.js")
-var random = require("./random.js")
 var times = require("./times.js")
+var random = require("./random.js")
+var uniqueId = require("./unique-id.js")
 
 // Chaining
 
@@ -210,8 +211,10 @@ module.exports = extend(function () {}, {
     // ## Utility
     identity: identity,
     constant: constant,
+    times: times,
     random: random,
-    times: times
+    uniqueId: uniqueId
+
 
     // ## Chaining
 })

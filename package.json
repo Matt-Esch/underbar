@@ -7,21 +7,27 @@
   "repository": "git://github.com/Matt-Esch/underbar.git",
   "main": "index",
   "homepage": "https://github.com/Matt-Esch/underbar",
-  "contributors": [{
-    "name": "Matt-Esch"
-  }],
+  "contributors": [
+    {
+      "name": "Matt-Esch"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/Matt-Esch/underbar/issues",
     "email": "matt@mattesch.info"
   },
-  "dependencies": {},
+  "dependencies": {
+    "individual": "~0.1.1"
+  },
   "devDependencies": {
     "tape": "~1.0.2"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://github.com/Matt-Esch/underbar/raw/master/LICENSE"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Matt-Esch/underbar/raw/master/LICENSE"
+    }
+  ],
   "scripts": {
     "test": "node ./test/index.js",
     "start": "node ./index.js",
