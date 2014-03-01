@@ -47,6 +47,7 @@ var range = require("./range.js")
 var bind = require("./bind.js")
 var bindAll = require("./bind-all.js")
 var partial = require("./partial.js")
+var memoize = require("./memoize.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -102,7 +103,6 @@ module.exports = {
     toArray: toArray,
     size: size,
 
-
     // ## Arrays
     first: first,
     head: first,
@@ -131,6 +131,7 @@ module.exports = {
     bind: bind,
     bindAll: bindAll,
     partial: partial,
+    memoize: memoize,
 
     // ## Objects
     keys: keys,
