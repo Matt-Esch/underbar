@@ -18,7 +18,8 @@ function uniq(array, isSorted, iterator, context) {
     var seen = []
 
     for (var i = 0, length = array.length; i < length; i++) {
-        var value = array[i];
+        var value = array[i]
+
         if (iterator) {
             value = iterator.call(context, value, i, array)
         }
@@ -30,7 +31,7 @@ function uniq(array, isSorted, iterator, context) {
                 seen.push(value)
             }
 
-            result.push(array[i]);
+            result.push(array[i])
         }
     }
 
