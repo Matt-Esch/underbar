@@ -45,6 +45,7 @@ var range = require("./range.js")
 
 // Functions
 var bind = require("./bind.js")
+var bindAll = require("./bind-all.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -127,6 +128,7 @@ module.exports = {
 
     // ## Functions
     bind: bind,
+    bindAll: bindAll,
 
     // ## Objects
     keys: keys,
