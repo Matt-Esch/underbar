@@ -100,61 +100,27 @@ module.exports = {
 
 
     // ## Arrays
-
-    // first
     first: first,
     head: first,
     take: first,
-
-    // initial
     initial: initial,
-
-    // last
     last: last,
-
-    // rest
     rest: rest,
     tail: rest,
     drop: rest,
-
-    // compact
     compact: compact,
-
-    // flatten
     flatten: flatten,
-
-    // without
     without: without,
-
-    // union
     union: union,
-
-    // intersection
     intersection: intersection,
-
-    // difference
     difference: difference,
-
-    // uniq
     uniq: uniq,
     unique: uniq,
-
-    // zip
     zip: zip,
-
-    // object
     object: object,
-
-    // indexOf
     indexOf: indexOf,
-
-    // last index of
     lastIndexOf: lastIndexOf,
-
-    // sorted index
     sortedIndex: sortedIndex,
-
-    // range
     range: range,
 
     // ## Functions
