@@ -39,8 +39,9 @@ var uniq = require("./uniq.js")
 var zip = require("./zip.js")
 var object = require("./object.js")
 var indexOf = require("./index-of.js")
-var sortedIndex = require("./sorted-index.js")
 var lastIndexOf = require("./last-index-of.js")
+var sortedIndex = require("./sorted-index.js")
+var range = require("./range.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -147,11 +148,14 @@ module.exports = {
     // indexOf
     indexOf: indexOf,
 
+    // last index of
+    lastIndexOf: lastIndexOf,
+
     // sorted index
     sortedIndex: sortedIndex,
 
-    // last index of
-    lastIndexOf: lastIndexOf,
+    // range
+    range: range,
 
     // ## Functions
     bind: bind,
