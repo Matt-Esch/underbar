@@ -65,6 +65,7 @@ var pairs = require("./pairs.js")
 var invert = require("./invert.js")
 var functions = require("./functions.js")
 var extend = require("./extend.js")
+var defaults = require("./defaults.js")
 var pick = require("./pick.js")
 var omit = require("./omit.js")
 var has = require("./has.js")
@@ -165,6 +166,7 @@ module.exports = {
     functions: functions,
     methods: functions,
     extend: extend,
+    defaults: defaults,
     pick: pick,
     omit: omit,
     has: has,
