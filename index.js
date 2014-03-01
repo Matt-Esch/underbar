@@ -72,6 +72,7 @@ var clone = require("./clone.js")
 var tap = require("./tap.js")
 var has = require("./has.js")
 var matches = require("./matches.js")
+var property = require("./property.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
 var isFunction = require("./is-function.js")
@@ -176,6 +177,7 @@ module.exports = {
     omit: omit,
     has: has,
     matches: matches,
+    property: property,
     isEmpty: isEmpty,
     isArray: isArray,
     isFunction: isFunction,
