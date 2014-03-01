@@ -48,6 +48,7 @@ var bind = require("./bind.js")
 var bindAll = require("./bind-all.js")
 var partial = require("./partial.js")
 var memoize = require("./memoize.js")
+var delay = require("./delay.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -132,6 +133,7 @@ module.exports = {
     bindAll: bindAll,
     partial: partial,
     memoize: memoize,
+    delay: delay,
 
     // ## Objects
     keys: keys,
