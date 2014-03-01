@@ -1,7 +1,8 @@
-var where = require("./where.js")
+var find = require("./find.js")
+var matches = require("./matches.js")
 
 module.exports = findWhere
 
 function findWhere(obj, attrs) {
-    return where(obj, attrs, true)
+    return find(obj, matches(attrs))
 }
