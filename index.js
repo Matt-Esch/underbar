@@ -36,6 +36,7 @@ var difference = require("./difference.js")
 var union = require("./union.js")
 var intersection = require("./intersection.js")
 var uniq = require("./uniq.js")
+var zip = require("./zip.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -132,6 +133,9 @@ module.exports = {
     // uniq
     uniq: uniq,
     unique: uniq,
+
+    // zip
+    zip: zip,
 
     // ## Functions
     bind: bind,
