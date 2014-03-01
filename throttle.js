@@ -30,8 +30,8 @@ function throttle(func, wait, options) {
 
         var remaining = wait - (now - previous)
 
-        context = this;
-        args = arguments;
+        context = this
+        args = arguments
 
         if (remaining <= 0) {
             clearTimeout(timeout)
