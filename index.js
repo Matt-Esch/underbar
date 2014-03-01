@@ -56,6 +56,7 @@ var once = require("./once.js")
 var after = require("./after.js")
 var now = require("./now.js")
 var wrap = require("./wrap.js")
+var compose = require("./compose.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -148,6 +149,7 @@ module.exports = {
     after: after,
     now: now,
     wrap: wrap,
+    compose: compose,
 
     // ## Objects
     keys: keys,
