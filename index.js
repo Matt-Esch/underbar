@@ -92,6 +92,7 @@ var isUndefined = require("./is-undefined.js")
 
 // Utility
 var identity = require("./identity.js")
+var constant = require("./constant.js")
 var random = require("./random.js")
 var times = require("./times.js")
 
@@ -208,6 +209,7 @@ module.exports = extend(function () {}, {
 
     // ## Utility
     identity: identity,
+    constant: constant,
     random: random,
     times: times
 

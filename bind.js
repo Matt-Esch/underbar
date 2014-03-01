@@ -18,7 +18,7 @@ function bind(func, context) {
     }
 
     args = slice.call(arguments, 2)
-    bound = function() {
+    bound = function () {
         if (!(this instanceof bound)) {
             return func.apply(context, args.concat(slice.call(arguments)))
         }
