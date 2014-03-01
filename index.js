@@ -63,6 +63,7 @@ var keys = require("./keys.js")
 var values = require("./values.js")
 var pairs = require("./pairs.js")
 var invert = require("./invert.js")
+var functions = require("./functions")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -158,6 +159,8 @@ module.exports = {
     values: values,
     pairs: pairs,
     invert: invert,
+    functions: functions,
+    methods: functions,
     has: has,
     isEmpty: isEmpty,
     isArray: isArray,
