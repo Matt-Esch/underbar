@@ -66,6 +66,7 @@ var invert = require("./invert.js")
 var functions = require("./functions.js")
 var extend = require("./extend.js")
 var pick = require("./pick.js")
+var omit = require("./omit.js")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -165,6 +166,7 @@ module.exports = {
     methods: functions,
     extend: extend,
     pick: pick,
+    omit: omit,
     has: has,
     isEmpty: isEmpty,
     isArray: isArray,
