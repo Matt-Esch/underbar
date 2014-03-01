@@ -97,7 +97,8 @@ var times = require("./times.js")
 var random = require("./random.js")
 var uniqueId = require("./unique-id.js")
 var escape = require("./escape.js")
-var unescape = require("./unescape")
+var unescape = require("./unescape.js")
+var result = require("./result.js")
 
 // Chaining
 
@@ -217,8 +218,8 @@ module.exports = extend(function () {}, {
     random: random,
     uniqueId: uniqueId,
     escape: escape,
-    unescape: unescape
-
+    unescape: unescape,
+    result: result
 
     // ## Chaining
 })
