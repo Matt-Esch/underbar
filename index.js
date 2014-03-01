@@ -33,6 +33,8 @@ var compact = require("./compact.js")
 var flatten = require("./flatten.js")
 var without = require("./without.js")
 var difference = require("./difference.js")
+var union = require("./union.js")
+var uniq = require("./uniq.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -117,8 +119,15 @@ module.exports = {
     // without
     without: without,
 
+    // union
+    union: union,
+
     // difference
     difference: difference,
+
+    // uniq
+    uniq: uniq,
+    unique: uniq,
 
     // ## Functions
     bind: bind,
