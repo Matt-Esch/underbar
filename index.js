@@ -86,6 +86,9 @@ var finite = require("./is-finite.js")
 var isBoolean = require("./is-boolean.js")
 var isDate = require("./is-date.js")
 var isRegExp = require("./is-regexp.js")
+var isNaN = require("./is-nan.js")
+var isNull = require("./is-null.js")
+var isUndefined = require("./isUndefined.js")
 
 // Utility
 var identity = require("./identity.js")
@@ -199,6 +202,9 @@ module.exports = {
     isBoolean: isBoolean,
     isDate: isDate,
     isRegExp: isRegExp,
+    isNaN: isNaN,
+    isNull: isNull,
+    isUndefined: isUndefined,
 
     // ## Utility
     identity: identity,
