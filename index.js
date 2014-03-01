@@ -40,6 +40,7 @@ var zip = require("./zip.js")
 var object = require("./object.js")
 var indexOf = require("./index-of.js")
 var sortedIndex = require("./sorted-index.js")
+var lastIndexOf = require("./last-index-of.js")
 
 // Functions
 var bind = require("./bind.js")
@@ -148,6 +149,9 @@ module.exports = {
 
     // sorted index
     sortedIndex: sortedIndex,
+
+    // last index of
+    lastIndexOf: lastIndexOf,
 
     // ## Functions
     bind: bind,
