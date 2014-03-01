@@ -1,5 +1,7 @@
 var group = require("./lib/group.js")
 
-module.exports = group(function(result, key, value) {
+module.exports = group(indexBy)
+
+function indexBy(result, key, value) {
     result[key] = value
-})
+}
