@@ -51,6 +51,7 @@ var memoize = require("./memoize.js")
 var delay = require("./delay.js")
 var defer = require("./defer.js")
 var throttle = require("./throttle.js")
+var debounce = require("./debounce.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -138,6 +139,7 @@ module.exports = {
     delay: delay,
     defer: defer,
     throttle: throttle,
+    debounce: debounce,
 
     // ## Objects
     keys: keys,
