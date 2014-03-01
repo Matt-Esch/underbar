@@ -58,6 +58,7 @@ var isString = require("./is-string.js")
 // Utility
 var identity = require("./identity.js")
 var random = require("./random.js")
+var times = require("./times.js")
 
 // Chaining
 
@@ -137,7 +138,8 @@ module.exports = {
 
     // ## Utility
     identity: identity,
-    random: random
+    random: random,
+    times: times
 
     // ## Chaining
 }
