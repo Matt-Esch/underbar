@@ -83,6 +83,9 @@ var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
 var isNumber = require("./is-number.js")
 var finite = require("./is-finite.js")
+var isBoolean = require("./is-boolean.js")
+var isDate = require("./is-date.js")
+var isRegExp = require("./is-regexp.js")
 
 // Utility
 var identity = require("./identity.js")
@@ -193,6 +196,9 @@ module.exports = {
     isString: isString,
     isNumber: isNumber,
     isFinite: finite,
+    isBoolean: isBoolean,
+    isDate: isDate,
+    isRegExp: isRegExp,
 
     // ## Utility
     identity: identity,
