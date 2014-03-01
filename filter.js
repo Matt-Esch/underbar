@@ -4,18 +4,18 @@ var nativeFilter = Array.prototype.filter
 
 module.exports = filter
 
-function filter(obj, iterator, context) {
+function filter(obj, predicate, context) {
     var results = []
     if (obj == null) {
         return results
     }
 
     if (nativeFilter && obj.filter === nativeFilter) {
-        return obj.filter(iterator, context)
+        return obj.filter(predicate, context)
     }
 
     each(obj, function(value, index, list) {
-        if (iterator.call(context, value, index, list)) {
+        if (predicate.call(context, value, index, list)) {
             results.push(value)
         }
     })
