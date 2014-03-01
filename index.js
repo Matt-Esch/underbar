@@ -75,6 +75,7 @@ var matches = require("./matches.js")
 var property = require("./property.js")
 var isEqual = require("./is-equal.js")
 var isEmpty = require("./is-empty.js")
+var isElement = require("./is-element.js")
 var isArray = require("./is-array.js")
 var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
@@ -181,6 +182,7 @@ module.exports = {
     property: property,
     isEqual: isEqual,
     isEmpty: isEmpty,
+    isElement: isElement,
     isArray: isArray,
     isFunction: isFunction,
     isString: isString,
