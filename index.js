@@ -65,10 +65,11 @@ var pairs = require("./pairs.js")
 var invert = require("./invert.js")
 var functions = require("./functions.js")
 var extend = require("./extend.js")
-var defaults = require("./defaults.js")
-var clone = require("./clone.js")
 var pick = require("./pick.js")
 var omit = require("./omit.js")
+var defaults = require("./defaults.js")
+var clone = require("./clone.js")
+var tap = require("./tap.js")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -168,6 +169,7 @@ module.exports = {
     methods: functions,
     extend: extend,
     clone: clone,
+    tap: tap,
     defaults: defaults,
     pick: pick,
     omit: omit,
