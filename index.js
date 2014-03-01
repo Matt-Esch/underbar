@@ -61,6 +61,7 @@ var compose = require("./compose.js")
 // Objects
 var keys = require("./keys.js")
 var values = require("./values.js")
+var pairs = require("./pairs.js")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -154,6 +155,7 @@ module.exports = {
     // ## Objects
     keys: keys,
     values: values,
+    pairs: pairs,
     has: has,
     isEmpty: isEmpty,
     isArray: isArray,
