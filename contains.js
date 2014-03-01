@@ -1,4 +1,4 @@
-var any = require("./any.js")
+var any = require("./some.js")
 
 var nativeIndexOf = Array.prototype.indexOf
 

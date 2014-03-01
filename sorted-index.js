@@ -1,4 +1,4 @@
-var lookupIterator = require("./lib/lookupIterator.js")
+var lookupIterator = require("./lib/lookup-iterator.js")
 
 module.exports = sortedIndex
 

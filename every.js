@@ -1,8 +1,8 @@
 var breaker = require("./breaker.js")
-var each = require(".each.js")
-var identity = require("./indentity.js")
+var each = require("./each.js")
+var identity = require("./identity.js")
 
-var nativeEvery = Array.prototy.nativeEvery
+var nativeEvery = Array.prototype.every
 
 module.exports = every
 

@@ -1,5 +1,5 @@
 var has = require("./has.js")
-var isObject = require("./isObject.js")
+var isObject = require("./is-object.js")
 
 var nativeKeys = Object.keys
 

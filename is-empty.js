@@ -1,6 +1,6 @@
 var has = require("./has.js")
 var isArray = require("./is-array.js")
-var isString = require(".is-string.js")
+var isString = require("./is-string.js")
 
 module.exports = isEmpty
 

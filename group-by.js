@@ -1,4 +1,4 @@
-var group = require("./lib/group-by.js")
+var group = require("./lib/group.js")
 var has = require("./has.js")
 
 module.exports = group(groupBy)

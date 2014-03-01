@@ -86,9 +86,9 @@ var finite = require("./is-finite.js")
 var isBoolean = require("./is-boolean.js")
 var isDate = require("./is-date.js")
 var isRegExp = require("./is-regexp.js")
-var isNaN = require("./is-nan.js")
+var nan = require("./is-nan.js")
 var isNull = require("./is-null.js")
-var isUndefined = require("./isUndefined.js")
+var isUndefined = require("./is-undefined.js")
 
 // Utility
 var identity = require("./identity.js")
@@ -97,7 +97,7 @@ var times = require("./times.js")
 
 // Chaining
 
-module.exports = {
+module.exports = extend(function () {}, {
     // ## Collections
     each: each,
     forEach: each,
@@ -202,7 +202,7 @@ module.exports = {
     isBoolean: isBoolean,
     isDate: isDate,
     isRegExp: isRegExp,
-    isNaN: isNaN,
+    isNaN: nan,
     isNull: isNull,
     isUndefined: isUndefined,
 
@@ -212,4 +212,4 @@ module.exports = {
     times: times
 
     // ## Chaining
-}
+})
