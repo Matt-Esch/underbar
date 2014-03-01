@@ -34,6 +34,7 @@ var flatten = require("./flatten.js")
 var without = require("./without.js")
 var difference = require("./difference.js")
 var union = require("./union.js")
+var intersection = require("./intersection.js")
 var uniq = require("./uniq.js")
 
 // Functions
@@ -121,6 +122,9 @@ module.exports = {
 
     // union
     union: union,
+
+    // intersection
+    intersection: intersection,
 
     // difference
     difference: difference,
