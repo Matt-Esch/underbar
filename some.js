@@ -6,19 +6,21 @@ var nativeSome = Array.prototype.some
 
 module.exports = some
 
-function some(obj, iterator, context) {
-    iterator || (iterator = identity)
+function some(obj, predicate, context) {
     var result = false
+
     if (obj == null) {
         return result
     }
 
+    predicate || (predicate = identity)
+
     if (nativeSome && obj.some === nativeSome) {
-        return obj.some(iterator, context)
+        return obj.some(predicate, context)
     }
 
     each(obj, function(value, index, list) {
-        if (result || (result = iterator.call(context, value, index, list))) {
+        if (result || (result = predicate.call(context, value, index, list))) {
             return breaker
         }
     })
