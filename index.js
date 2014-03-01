@@ -50,6 +50,7 @@ var partial = require("./partial.js")
 var memoize = require("./memoize.js")
 var delay = require("./delay.js")
 var defer = require("./defer.js")
+var throttle = require("./throttle.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -136,6 +137,7 @@ module.exports = {
     memoize: memoize,
     delay: delay,
     defer: defer,
+    throttle: throttle,
 
     // ## Objects
     keys: keys,
