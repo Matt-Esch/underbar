@@ -6,20 +6,21 @@ var nativeEvery = Array.prototype.every
 
 module.exports = every
 
-function every(obj, iterator, context) {
+function every(obj, predicate, context) {
     var result = true
+
     if (obj == null) {
         return result
     }
 
-    iterator || (iterator = identity)
+    predicate = predicate || (predicate = identity)
 
     if (nativeEvery && obj.every === nativeEvery) {
-        return obj.every(iterator, context)
+        return obj.every(predicate, context)
     }
 
     each(obj, function(value, index, list) {
-        if (!(result = result && iterator.call(context, value, index, list))) {
+        if (!(result = result && predicate.call(context, value, index, list))) {
             return breaker
         }
     })
