@@ -1,8 +1,8 @@
 var test = require("tape")
 
-var overbar = require("../index")
+var underbar = require("../index")
 
-test("overbar is a function", function (assert) {
-    assert.equal(typeof overbar, "function")
+test("underbar is a function", function (assert) {
+    assert.equal(typeof underbar, "function")
     assert.end()
 })
