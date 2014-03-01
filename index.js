@@ -77,6 +77,7 @@ var isEqual = require("./is-equal.js")
 var isEmpty = require("./is-empty.js")
 var isElement = require("./is-element.js")
 var isArray = require("./is-array.js")
+var isObject = require("./is-object.js")
 var isFunction = require("./is-function.js")
 var isString = require("./is-string.js")
 var finite = require("./is-finite.js")
@@ -184,6 +185,7 @@ module.exports = {
     isEmpty: isEmpty,
     isElement: isElement,
     isArray: isArray,
+    isObject: isObject,
     isFunction: isFunction,
     isString: isString,
     isFinite: finite,
