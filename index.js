@@ -66,6 +66,7 @@ var invert = require("./invert.js")
 var functions = require("./functions.js")
 var extend = require("./extend.js")
 var defaults = require("./defaults.js")
+var clone = require("./clone.js")
 var pick = require("./pick.js")
 var omit = require("./omit.js")
 var has = require("./has.js")
@@ -166,6 +167,7 @@ module.exports = {
     functions: functions,
     methods: functions,
     extend: extend,
+    clone: clone,
     defaults: defaults,
     pick: pick,
     omit: omit,
