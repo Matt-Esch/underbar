@@ -2,11 +2,12 @@ var identity = require("./identity.js")
 var isFunction = require("./is-function.js")
 var map = require("./map.js")
 var pluck = require("./pluck.js")
+var property = require("./property.js")
 
 module.exports = sortBy
 
-function sortBy(obj, value, context) {
-    var iterator = value == null ? identity : lookupIterator(value)
+function sortBy(obj, iterator, context) {
+    iterator = lookupIterator(iterator)
 
     return pluck(map(obj, function(value, index, list) {
         return {
@@ -27,12 +28,18 @@ function sortBy(obj, value, context) {
                 return -1
             }
         }
-        return left.index - right.index;
+        return left.index - right.index
     }), "value")
 }
 
 function lookupIterator(value) {
-    return isFunction(value) ? value : function (obj) {
-        return obj[value]
+    if (value == null) {
+        return identity
     }
+
+    if (isFunction(value)) {
+        return value
+    }
+
+    return property(value)
 }
