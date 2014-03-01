@@ -144,6 +144,7 @@ module.exports = {
     debounce: debounce,
     once: once,
     after: after,
+    now: now,
 
     // ## Objects
     keys: keys,
