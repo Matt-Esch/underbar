@@ -2,10 +2,10 @@ var any = require("./some.js")
 
 module.exports = find
 
-function find(obj, iterator, context) {
+function find(obj, predicate, context) {
     var result
     any(obj, function(value, index, list) {
-      if (iterator.call(context, value, index, list)) {
+      if (predicate.call(context, value, index, list)) {
             result = value
             return true
         }
