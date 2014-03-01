@@ -52,6 +52,7 @@ var delay = require("./delay.js")
 var defer = require("./defer.js")
 var throttle = require("./throttle.js")
 var debounce = require("./debounce.js")
+var once = require("./once.js")
 
 // Objects
 var keys = require("./keys.js")
