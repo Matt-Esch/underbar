@@ -99,6 +99,7 @@ var uniqueId = require("./unique-id.js")
 var escape = require("./escape.js")
 var unescape = require("./unescape.js")
 var result = require("./result.js")
+var template = require("./template.js")
 
 // Chaining
 
@@ -219,7 +220,8 @@ module.exports = extend(function () {}, {
     uniqueId: uniqueId,
     escape: escape,
     unescape: unescape,
-    result: result
+    result: result,
+    template: template
 
     // ## Chaining
 })
