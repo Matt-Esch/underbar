@@ -54,6 +54,8 @@ var throttle = require("./throttle.js")
 var debounce = require("./debounce.js")
 var once = require("./once.js")
 var after = require("./after.js")
+var now = require("./now.js")
+var wrap = require("./wrap.js")
 
 // Objects
 var keys = require("./keys.js")
@@ -145,6 +147,7 @@ module.exports = {
     once: once,
     after: after,
     now: now,
+    wrap: wrap,
 
     // ## Objects
     keys: keys,
