@@ -65,6 +65,7 @@ var pairs = require("./pairs.js")
 var invert = require("./invert.js")
 var functions = require("./functions.js")
 var extend = require("./extend.js")
+var pick = require("./pick.js")
 var has = require("./has.js")
 var isEmpty = require("./is-empty.js")
 var isArray = require("./is-array.js")
@@ -163,6 +164,7 @@ module.exports = {
     functions: functions,
     methods: functions,
     extend: extend,
+    pick: pick,
     has: has,
     isEmpty: isEmpty,
     isArray: isArray,
