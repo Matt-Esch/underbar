@@ -12,24 +12,22 @@ function min(obj, iterator, context) {
     }
 
     if (!iterator && isEmpty(obj)) {
-        return Infinity
+        return -Infinity
     }
 
-    var result = {
-        computed: Infinity,
-        value: Infinity
-    }
+    var result = -Infinity
+    var lastComputed = -Infinity
 
     each(obj, function (value, index, list) {
         var computed = iterator ?
             iterator.call(context, value, index, list) :
             value
 
-        computed < result.computed && (result = {
-            value: value,
-            computed: computed
-        })
+        if (computed < lastComputed) {
+            result = value
+            lastComputed = computed
+        }
 
-        return result.value
+        return result
     })
 }
